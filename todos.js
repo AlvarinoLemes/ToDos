@@ -50,3 +50,8 @@ function deletetodo(pos) {
 function saveToStorage() {
     localStorage.setItem('list_todos', JSON.stringify(todos))
 }
+
+document.addEventListener('keydown', function (event) {
+    if (event.keyCode !== 13) return;
+    addtodo();
+});
