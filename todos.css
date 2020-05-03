@@ -1,0 +1,32 @@
+#app {
+    left:50%;
+    top:50%;
+    margin-left:-100px; /* Metade do valor da Largura */
+    margin-top:-100px; /* Metade da valor da Altura */
+    position: absolute;
+    width:-400px; /* Valor da Largura */
+    height:300px; /* Valor da Altura */
+    color:black;
+    background-color: rgb(238, 228, 187);
+}
+
+.tlt {
+    background-color: beige;
+    margin-top: -30px;
+}
+
+.lt {
+    text-align: center;
+    font-size: 40px;
+ }
+
+.lt1 {
+     font-size: 23px;
+     list-style-type: none;
+     text-decoration: none;
+ }
+
+a:link {
+     text-decoration: none;
+     color: #000099
+}
