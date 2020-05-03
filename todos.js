@@ -1,6 +1,7 @@
 var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
+var resetElement = document.querySelector('#reset');
 
 var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
@@ -42,6 +43,15 @@ function addtodo() {
 
 buttonElement.onclick = addtodo;
 
+resetElement.onclick = resetetodo;
+
+function resetetodo() {
+    todos = [];
+    renderTodos();
+    saveToStorage();
+}
+
+
 function deletetodo(pos) {
     todos.splice(pos, 1);
     renderTodos();  
@@ -49,7 +59,7 @@ function deletetodo(pos) {
 }
 
 function saveToStorage() {
-    localStorage.setItem('list_todos', JSON.stringify(todos))
+    localStorage.setItem('list_todos', JSON.stringify(todos));
 }
 
 document.addEventListener('keydown', function (event) {
