@@ -1,11 +1,11 @@
 #app {
     left:50%;
     top:50%;
-    margin-left:-100px; /* Metade do valor da Largura */
-    margin-top:-100px; /* Metade da valor da Altura */
+    margin-left:-100px; 
+    margin-top:-100px; 
     position: absolute;
-    width:-400px; /* Valor da Largura */
-    height:300px; /* Valor da Altura */
+    width:-400px; 
+    height:300px; 
     color:black;
     background-color: rgb(238, 228, 187);
 }
